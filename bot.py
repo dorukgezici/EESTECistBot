@@ -18,7 +18,7 @@ def unknown(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="Bu komutu bilmiyorum.")
 
 if __name__ == '__main__':
-    cb = cleverbot.Cleverbot('CC4zfUgbrPndTHT3tLdz3q9-2DA')
+    cb = cleverbot.Cleverbot('CC62ho-5twjh0shkV6pqs85zvoA')
     updater = Updater(token='506075389:AAHhc04sGoAwXS97dQjx53oi3_OsyIyaAqw')
     dispatcher = updater.dispatcher
 
