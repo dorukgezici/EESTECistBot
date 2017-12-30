@@ -5,7 +5,8 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="Yazın konuşalım beybiler ;)")
+    reply = cb.say("Merhaba!")
+    bot.send_message(chat_id=update.message.chat_id, text=reply)
 
 def say(bot, update):
     reply = cb.say(update.message.text)
