@@ -1,4 +1,4 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, InlineQueryHandler
 import cleverbot
 
 import logging
@@ -37,6 +37,9 @@ if __name__ == '__main__':
 
     unknown_handler = MessageHandler(Filters.command, unknown)
     dispatcher.add_handler(unknown_handler)
+
+    inline_handler = InlineQueryHandler(say)
+    dispatcher.add_handler(inline_handler)
 
     updater.start_polling()
     updater.idle()
