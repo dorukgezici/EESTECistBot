@@ -1,1 +1,1 @@
-# EESTECistBot
+# OsmanChatbot
